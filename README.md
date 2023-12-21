@@ -1,22 +1,27 @@
 # Firefox vertical tabs
 
+<video width="600" controls>
+  <source src="https://user-images.githubusercontent.com/7535699/291488321-4f4fffd0-c6ae-47fc-81cf-7bc01f7d2715.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Setting it up
 
 0. Install the [Sidebery extension](https://addons.mozilla.org/en-US/firefox/addon/sidebery/).
 1. In Sidebery settings:
-    1. Set the title preface must as "[S] " (without quotes).
+    1. Set the title preface must as `"[S] "` (without quotes, trailing space is optional but makes titles more readable).
         This is used by CSS rules below to identify when Sidebery is active.
-    2. Set 'Tabs tree structure' to false -- this stylesheet doesn't adapt to
+    2. Set 'Tabs tree structure' to `false` -- this stylesheet doesn't adapt to
         multiple tab levels, but feel free to tweak it!
-    3. Copy and paste the "SIDEBERY STYLES" section below in
-        Sidebery's Styles Editor -> Sidebar.
+    3. Copy and paste the `SIDEBERY STYLES` section in the [userChrome.css](./userChrome.css) to
+        Sidebery's Styles Editor → Sidebar.
     4. Optionally sync Sidebery settings to Firefox account to get other customizations.
-2. Go to `about:support` -> copy 'user folder' location, setting it as the variable `$FF_USER_DIR`.
+2. Go to `about:support` → copy 'user folder' location, setting it as the variable `$FF_USER_DIR`.
 3. Move CSS files to FF user location:
     + `mv userChrome.css $FF_USER_DIR/userChrome.css`
     + `mv userContent.css $FF_USER_DIR/userContent.css`
-4. Go to about:config -> `toolkit.legacyUserProfileCustomizations.stylesheets` to TRUE.
-5. Restart Firefox ( ab`out:restartrequired` to reopen your current tabs ).
+4. Go to about:config → `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
+5. Restart Firefox (`about:restartrequired` to reopen your current tabs).
 
 ## Tweaking and Debugging
 

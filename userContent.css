@@ -1,0 +1,92 @@
+/* =============================== */
+/* START OF SIDEBERY MINIMAL STYLE */
+/* =============================== */
+
+/* Based on https://github.com/ongots/firefox-sidebery-minimal-style */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #80808060 transparent !important
+}
+
+
+/*   Newtab   */
+
+@-moz-document url("about:home"),
+url("about:newtab") {
+    body {
+        background-color: #fafafa !important;
+        background-size: 30px 30px
+    }
+
+    @media (prefers-color-scheme: dark),
+    (prefers-color-scheme: no-preference) {
+        body {
+            background-color: #0f0f0f !important;
+        }
+    }
+
+    .prefs-button {
+        display: none
+    }
+}
+
+
+/*   Addons   */
+
+button.category:nth-child(1),
+#help-button,
+#helpButton,
+.addon-badge-recommended,
+.addon-description,
+.back-button,
+.header-name,
+.list-section-heading,
+.search-label,
+#sidebar::after,
+.navigation::after {
+    display: none !important
+}
+
+:root {
+    --addon-icon-size: 26px !important;
+    --card-padding: 14px !important;
+    --in-content-box-border-color: #333 !important
+}
+
+.addon.card {
+    margin-bottom: 5px !important
+}
+
+.addon-name {
+    font-weight: 400 !important
+}
+
+.addon-name-container {
+    margin-top: 0 !important
+}
+
+.main-search {
+    margin: -15px 0 -41px -364px !important
+}
+
+.page-options-menu,
+#updates-message {
+    margin: -22px 0 -10px 0 !important
+}
+
+.sticky-container {
+    position: static !important
+}
+
+.more-options-button {
+    background-color: transparent !important
+}
+
+.more-options-button:hover {
+    background-color: #80808040 !important
+}
+
+/* ============================= */
+/* END OF SIDEBERY MINIMAL STYLE */
+/* ============================= */

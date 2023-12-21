@@ -1,9 +1,6 @@
 # Firefox vertical tabs
 
-<video width="600" controls>
-  <source src="https://user-images.githubusercontent.com/7535699/291488321-4f4fffd0-c6ae-47fc-81cf-7bc01f7d2715.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![vertical-tabs-demo-cut](https://github.com/lucaspar/firefox-vertical-tabs/assets/7535699/62239850-2f2a-4a06-86f4-59019a976900)
 
 ## Setting it up
 

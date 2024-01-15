@@ -1,4 +1,36 @@
 /*
+My own settings
+
+/* Dark scroll bar, in dark-scrollbar.as.css */
+/*
+toolbarbutton#alltabs-button {
+  -moz-binding: url(data:text/plain;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8IS0tIENvcHlyaWdodCAoYykgMjAxNyBIYWdnYWkgTnVjaGkNCkF2YWlsYWJsZSBmb3IgdXNlIHVuZGVyIHRoZSBNSVQgTGljZW5zZToNCmh0dHBzOi8vb3BlbnNvdXJjZS5vcmcvbGljZW5zZXMvTUlUDQogLS0+DQoNCjwhLS0gUnVuIHVzZXJDaHJvbWUuanMvdXNlckNocm9tZS54dWwgYW5kIC51Yy5qcy8udWMueHVsLy5jc3MgZmlsZXMgIC0tPg0KPGJpbmRpbmdzIHhtbG5zPSJodHRwOi8vd3d3Lm1vemlsbGEub3JnL3hibCI+DQogICAgPGJpbmRpbmcgaWQ9ImpzIj4NCiAgICAgICAgPGltcGxlbWVudGF0aW9uPg0KICAgICAgICAgICAgPGNvbnN0cnVjdG9yPjwhW0NEQVRBWw0KICAgICAgICAgICAgICAgIGlmKHdpbmRvdy51c2VyQ2hyb21lSnNNb2QpIHJldHVybjsNCiAgICAgICAgICAgICAgICB3aW5kb3cudXNlckNocm9tZUpzTW9kID0gdHJ1ZTsNCg0KICAgICAgICAgICAgICAgIHZhciBjaHJvbWVGaWxlcyA9IEZpbGVVdGlscy5nZXREaXIoIlVDaHJtIiwgW10pLmRpcmVjdG9yeUVudHJpZXM7DQogICAgICAgICAgICAgICAgdmFyIHh1bEZpbGVzID0gW107DQogICAgICAgICAgICAgICAgdmFyIHNzcyA9IENjWydAbW96aWxsYS5vcmcvY29udGVudC9zdHlsZS1zaGVldC1zZXJ2aWNlOzEnXS5nZXRTZXJ2aWNlKENpLm5zSVN0eWxlU2hlZXRTZXJ2aWNlKTsNCg0KICAgICAgICAgICAgICAgIHdoaWxlKGNocm9tZUZpbGVzLmhhc01vcmVFbGVtZW50cygpKSB7DQogICAgICAgICAgICAgICAgICAgIHZhciBmaWxlID0gY2hyb21lRmlsZXMuZ2V0TmV4dCgpLlF1ZXJ5SW50ZXJmYWNlKENpLm5zSUZpbGUpOw0KICAgICAgICAgICAgICAgICAgICB2YXIgZmlsZVVSSSA9IFNlcnZpY2VzLmlvLm5ld0ZpbGVVUkkoZmlsZSk7DQoNCiAgICAgICAgICAgICAgICAgICAgaWYoZmlsZS5pc0ZpbGUoKSkgew0KICAgICAgICAgICAgICAgICAgICAgICAgdHlwZSA9ICJub25lIjsNCiAgICAgICAgICAgICAgICAgICAgICAgIGlmKC8oXnVzZXJDaHJvbWV8LnVjKS5qcyQvaS50ZXN0KGZpbGUubGVhZk5hbWUpKSB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgdHlwZSA9ICJ1c2VyY2hyb21lL2pzIjsNCiAgICAgICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICAgICAgICAgIGVsc2UgaWYoLyhedXNlckNocm9tZXwudWMpLnh1bCQvaS50ZXN0KGZpbGUubGVhZk5hbWUpKSB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgdHlwZSA9ICJ1c2VyY2hyb21lL3h1bCI7DQogICAgICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgICAgICAgICBlbHNlIGlmKC8uYXMuY3NzJC9pLnRlc3QoZmlsZS5sZWFmTmFtZSkpIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0eXBlID0gImFnZW50c2hlZXQiOw0KICAgICAgICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgICAgICAgICAgZWxzZSBpZigvXig/ISh1c2VyQ2hyb21lfHVzZXJDb250ZW50KS5jc3MkKS4rLmNzcyQvaS50ZXN0KGZpbGUubGVhZk5hbWUpKSB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgdHlwZSA9ICJ1c2Vyc2hlZXQiOw0KICAgICAgICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgICAgICAgICAgaWYodHlwZSAhPSAibm9uZSIpIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb25zb2xlLmxvZygiLS0tLS0tLS0tLVwgIiArIGZpbGUubGVhZk5hbWUgKyAiICgiICsgdHlwZSArICIpIik7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgdHJ5IHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYodHlwZSA9PSAidXNlcmNocm9tZS9qcyIpIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFNlcnZpY2VzLnNjcmlwdGxvYWRlci5sb2FkU3ViU2NyaXB0V2l0aE9wdGlvbnMoZmlsZVVSSS5zcGVjLCB7dGFyZ2V0OiB3aW5kb3csIGlnbm9yZUNhY2hlOiB0cnVlfSk7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZWxzZSBpZih0eXBlID09ICJ1c2VyY2hyb21lL3h1bCIpIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHh1bEZpbGVzLnB1c2goZmlsZVVSSS5zcGVjKTsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbHNlIGlmKHR5cGUgPT0gImFnZW50c2hlZXQiKSB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZighc3NzLnNoZWV0UmVnaXN0ZXJlZChmaWxlVVJJLCBzc3MuQUdFTlRfU0hFRVQpKQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNzcy5sb2FkQW5kUmVnaXN0ZXJTaGVldChmaWxlVVJJLCBzc3MuQUdFTlRfU0hFRVQpOw0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVsc2UgaWYodHlwZSA9PSAidXNlcnNoZWV0Iikgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYoIXNzcy5zaGVldFJlZ2lzdGVyZWQoZmlsZVVSSSwgc3NzLlVTRVJfU0hFRVQpKQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNzcy5sb2FkQW5kUmVnaXN0ZXJTaGVldChmaWxlVVJJLCBzc3MuVVNFUl9TSEVFVCk7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IGNhdGNoKGUpIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29uc29sZS5sb2coIiMjIyMjIyMjIyMgRVJST1I6ICIgKyBlICsgIiBhdCAiICsgZS5saW5lTnVtYmVyICsgIjoiICsgZS5jb2x1bW5OdW1iZXIpOw0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb25zb2xlLmxvZygiLS0tLS0tLS0tLS8gIiArIGZpbGUubGVhZk5hbWUpOw0KICAgICAgICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgfQ0KDQogICAgICAgICAgICAgICAgc2V0VGltZW91dChmdW5jdGlvbiBsb2FkWFVMKCkgew0KICAgICAgICAgICAgICAgICAgICBpZih4dWxGaWxlcy5sZW5ndGggPiAwKSB7DQogICAgICAgICAgICAgICAgICAgICAgICBkb2N1bWVudC5sb2FkT3ZlcmxheSh4dWxGaWxlcy5zaGlmdCgpLCBudWxsKTsNCiAgICAgICAgICAgICAgICAgICAgICAgIHNldFRpbWVvdXQobG9hZFhVTCwgNSk7DQogICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICB9LCAwKTsNCiAgICAgICAgICAgIF1dPjwvY29uc3RydWN0b3I+DQogICAgICAgIDwvaW1wbGVtZW50YXRpb24+DQogICAgPC9iaW5kaW5nPg0KPC9iaW5kaW5ncz4=);
+}
+*/
+/* Hide Topbar */
+/*
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"])
+  #TabsToolbar
+  > .toolbar-items {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+  visibility: collapase !important;
+}
+
+#titlebar {
+  max-height: 50px;
+}
+
+#nav-bar {
+  margin-top: -36px;
+  margin-right: 175px;
+  margin-buttom: 0px;
+}
+*/
+/*
 See more info in https://github.com/lucaspar/firefox-vertical-tabs
 */
 
@@ -37,61 +69,61 @@ SECTION: BLURRED TRANSPARENCY
 (and monospace font for urlbar)
 =============================
 */
-@import url('blurredfox/parts/customization-window.css');
+@import url("blurredfox/parts/customization-window.css");
 
 #urlbar-input {
-    font-family: monospace !important;
+  font-family: monospace !important;
 }
 
 #urlbar[breakout][breakout-extend][open] {
-    /* border: 1px dotted orangered !important; */
-    background-color: #0d1320d3;
-    background-image: url(./image/noise-512x512.png);
-    /*
+  /* border: 1px dotted orangered !important; */
+  background-color: #0d1320d3;
+  background-image: url(./image/noise-512x512.png);
+  /*
         attempt of blurring the background of the expanded
         tab area - unfortunately it does not blur the page
         contents in the back, even though the backdrop filter
         now works in Firefox.
     */
-    -webkit-backdrop-filter: blur(6px) !important;
-    -moz-backdrop-filter: blur(6px) !important;
-    -ms-backdrop-filter: blur(6px) !important;
-    -o-backdrop-filter: blur(6px) !important;
-    backdrop-filter: blur(6px) !important;
-    font-family: monospace !important;
-    border-radius: 0 0 2em 2em;
-    transition: all 0.2s ease-in-out;
-    height: 0;
-    margin: 0 !important;
-    padding: 0 !important
+  -webkit-backdrop-filter: blur(6px) !important;
+  -moz-backdrop-filter: blur(6px) !important;
+  -ms-backdrop-filter: blur(6px) !important;
+  -o-backdrop-filter: blur(6px) !important;
+  backdrop-filter: blur(6px) !important;
+  font-family: monospace !important;
+  border-radius: 0 0 2em 2em;
+  transition: all 0.2s ease-in-out;
+  height: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .menupopup {
-    /* border: 2px dashed rgb(194, 133, 41) !important; */
-    background-image: url(image/noise-512x512.png) !important;
-    -webkit-backdrop-filter: blur(32px) !important;
-    backdrop-filter: saturate(180%) blur(35px);
+  /* border: 2px dashed rgb(194, 133, 41) !important; */
+  background-image: url(image/noise-512x512.png) !important;
+  -webkit-backdrop-filter: blur(32px) !important;
+  backdrop-filter: saturate(180%) blur(35px);
 }
 
 .urlbarView-body-inner {
-    /*     border: 1px solid royalblue !important; */
-    /*     background-color: transparent; */
-    color: white;
-    padding: var(--s4);
-    animation-duration: 1s;
-    animation-delay: 2s;
-    animation-fill-mode: both;
-    transition: 0.2s;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.192);
-    box-shadow: 2px 2px 8px #00000021;
+  /*     border: 1px solid royalblue !important; */
+  /*     background-color: transparent; */
+  color: white;
+  padding: var(--s4);
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  transition: 0.2s;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.192);
+  box-shadow: 2px 2px 8px #00000021;
 }
 
 #urlbar-background {
-    border: 0 !important;
-    /* border: 1px solid cyan !important; */
-    /* enable eased transitions */
-    display: none !important;
-    transition: all 0.2s ease-in-out;
+  border: 0 !important;
+  /* border: 1px solid cyan !important; */
+  /* enable eased transitions */
+  display: none !important;
+  transition: all 0.2s ease-in-out;
 }
 
 /*
@@ -102,201 +134,201 @@ SECTION: SIDEBERY MINIMAL STYLE
 Based on: https://github.com/ongots/firefox-sidebery-minimal-style
 */
 
-@media (prefers-color-scheme: dark),
-(prefers-color-scheme: no-preference) {
-    * {
-        --bg: rgb(9, 9, 9);
-        --menu: #151515;
-        --hover: #10201b8e;
-        --active: #7a00c096;
-        --text: #ddd;
-        --text-hover: #eee;
-        --text-active: #fff;
-        --url-color: #8F94D2;
-        --tab-line-color: rgb(41, 248, 158);
-        --lwt-toolbarbutton-icon-fill: rgb(176, 255, 217) !important;
-    }
+@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+  * {
+    --bg: rgb(9, 9, 9);
+    --menu: #151515;
+    --hover: #10201b8e;
+    --active: #7a00c096;
+    --text: #ddd;
+    --text-hover: #eee;
+    --text-active: #fff;
+    --url-color: #8f94d2;
+    --tab-line-color: rgb(41, 248, 158);
+    --lwt-toolbarbutton-icon-fill: rgb(176, 255, 217) !important;
+  }
 
-    .menu-right,
-    #screenshots_mozilla_org-menuitem-_create-screenshot>hbox:nth-child(1)>image:nth-child(1) {
-        filter: contrast(0%)
-    }
+  .menu-right,
+  #screenshots_mozilla_org-menuitem-_create-screenshot
+    > hbox:nth-child(1)
+    > image:nth-child(1) {
+    filter: contrast(0%);
+  }
 
-    [checked="true"] .menu-iconic-left {
-        filter: contrast(300%)
-    }
+  [checked="true"] .menu-iconic-left {
+    filter: contrast(300%);
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    * {
-        --bg: #fafafa;
-        --menu: #fafafa;
-        --hover: #11533c7c;
-        --active: #7a00c096;
-        --text: #111;
-        --text-hover: rgba(37, 181, 124, 0.408);
-        --url-color: #4353B6;
-        --tab-line-color: #FF1B00;
-        --lwt-toolbarbutton-icon-fill: #222 !important;
-    }
+  * {
+    --bg: #fafafa;
+    --menu: #fafafa;
+    --hover: #11533c7c;
+    --active: #7a00c096;
+    --text: #111;
+    --text-hover: rgba(37, 181, 124, 0.408);
+    --url-color: #4353b6;
+    --tab-line-color: #ff1b00;
+    --lwt-toolbarbutton-icon-fill: #222 !important;
+  }
 
-    spacer {
-        filter: invert(100%)
-    }
+  spacer {
+    filter: invert(100%);
+  }
 }
 
 * {
-    scrollbar-width: thin;
-    scrollbar-color: #80808060 transparent;
-    --toolbarbutton-border-radius: 0;
-    --arrowpanel-dimmed: var(--hover) !important;
-    --arrowpanel-dimmed-further: var(--active) !important;
-    --lwt-accent-color: var(--bg) !important;
-    --lwt-background-tab-separator-color: transparent;
-    --tabs-border-color: transparent;
-    --tab-min-width: 84px;
-    --toolbar-bgcolor: var(--bg) !important;
-    --toolbar-bgimage: none;
-    --toolbar-color: var(--text) !important;
-    --toolbarbutton-outer-padding: 0;
-    --toolbarbutton-hover-background: var(--hover) !important;
-    --toolbarbutton-active-background: var(--hover) !important;
-    /*  urlbar  */
-    --autocomplete-popup-highlight-background: var(--hover) !important;
-    --autocomplete-popup-highlight-color: var(--url-color) !important;
-    --urlbar-popup-action-color: var(--url-color) !important;
-    --urlbar-popup-url-color: var(--url-color) !important;
-    /*  searchbar */
-    --autocomplete-popup-background: var(--bg);
-    --autocomplete-popup-color: var(--text);
-    --lwt-sidebar-background-color: var(--bg) !important;
-    --lwt-sidebar-text-color: var(--text) !important;
+  scrollbar-width: thin;
+  scrollbar-color: #80808060 transparent;
+  --toolbarbutton-border-radius: 0;
+  --arrowpanel-dimmed: var(--hover) !important;
+  --arrowpanel-dimmed-further: var(--active) !important;
+  --lwt-accent-color: var(--bg) !important;
+  --lwt-background-tab-separator-color: transparent;
+  --tabs-border-color: transparent;
+  --tab-min-width: 84px;
+  --toolbar-bgcolor: var(--bg) !important;
+  --toolbar-bgimage: none;
+  --toolbar-color: var(--text) !important;
+  --toolbarbutton-outer-padding: 0;
+  --toolbarbutton-hover-background: var(--hover) !important;
+  --toolbarbutton-active-background: var(--hover) !important;
+  /*  urlbar  */
+  --autocomplete-popup-highlight-background: var(--hover) !important;
+  --autocomplete-popup-highlight-color: var(--url-color) !important;
+  --urlbar-popup-action-color: var(--url-color) !important;
+  --urlbar-popup-url-color: var(--url-color) !important;
+  /*  searchbar */
+  --autocomplete-popup-background: var(--bg);
+  --autocomplete-popup-color: var(--text);
+  --lwt-sidebar-background-color: var(--bg) !important;
+  --lwt-sidebar-text-color: var(--text) !important;
 }
 
 :root[uidensity="compact"] * {
-    font-size: 10pt !important
+  font-size: 10pt !important;
 }
 
 :root[tabsintitlebar] {
-    background-color: var(--bg) !important;
-    color: var(--text) !important
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
 }
 
 /*   ______ TABS ______   */
 
 .titlebar-color {
-    background-color: var(--bg)
+  background-color: var(--bg);
 }
 
 hbox.titlebar-spacer:nth-child(1) {
-    display: none !important
+  display: none !important;
 }
 
 .tabbrowser-tab[pinned] {
-    background-color: var(--bg) !important;
-    z-index: 3 !important
+  background-color: var(--bg) !important;
+  z-index: 3 !important;
 }
 
 .tab-line:not([selected]) {
-    height: 0 !important
+  height: 0 !important;
 }
 
 .tab-background[multiselected] {
-    background: #223B82 !important
+  background: #223b82 !important;
 }
 
 .tabbrowser-tab[multiselected] :hover .tab-background:not([selected]) {
-    background-color: #2C4890 !important
+  background-color: #2c4890 !important;
 }
 
 @media (prefers-color-scheme: light) {
-    .tab-background[multiselected] {
-        background-color: #4B7CFC !important
-    }
+  .tab-background[multiselected] {
+    background-color: #4b7cfc !important;
+  }
 
-    .tabbrowser-tab[multiselected] :hover .tab-background:not([selected]) {
-        background-color: #3E6AE5 !important
-    }
+  .tabbrowser-tab[multiselected] :hover .tab-background:not([selected]) {
+    background-color: #3e6ae5 !important;
+  }
 
-    .tab-background[selected]:not([multiselected]) {
-        background: var(--hover) !important
-    }
+  .tab-background[selected]:not([multiselected]) {
+    background: var(--hover) !important;
+  }
 }
 
-.tab-background[multiselected]>.tab-background-inner {
-    background-color: transparent !important
+.tab-background[multiselected] > .tab-background-inner {
+  background-color: transparent !important;
 }
 
 .tabbrowser-tab:hover .tab-background:not([selected]) {
-    background-color: var(--hover) !important
+  background-color: var(--hover) !important;
 }
 
 .all-tabs-item {
-    opacity: .8
+  opacity: 0.8;
 }
 
 .all-tabs-item[selected] {
-    opacity: 1;
-    box-shadow: none !important;
-    background-color: var(--active) !important
+  opacity: 1;
+  box-shadow: none !important;
+  background-color: var(--active) !important;
 }
 
 .panel-viewstack {
-    max-height: 100% !important
+  max-height: 100% !important;
 }
 
 .tabbrowser-tab::after {
-    border-left: 0 !important
+  border-left: 0 !important;
 }
 
 .tab-content {
-    padding: 0 4px !important
+  padding: 0 4px !important;
 }
 
 /*   Container indicator   */
 
 .tab-bottom-line {
-    background: var(--identity-tab-color) !important;
-    margin-bottom: 0 !important
+  background: var(--identity-tab-color) !important;
+  margin-bottom: 0 !important;
 }
 
-@media (prefers-color-scheme: dark),
-(prefers-color-scheme: no-preference) {
-    .tab-bottom-line {
-        height: 1px !important
-    }
+@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+  .tab-bottom-line {
+    height: 1px !important;
+  }
 }
 
 /*   Discard tabs   */
 
 .tabbrowser-tab:not([selected="false"])[pending] .tab-content {
-    opacity: .7 !important
+  opacity: 0.7 !important;
 }
 
 .tabbrowser-tab[pending]:hover .tab-content,
 .tab-label:-moz-window-inactive {
-    opacity: .8 !important
+  opacity: 0.8 !important;
 }
 
 .titlebar-spacer {
-    width: 14px !important
+  width: 14px !important;
 }
 
 /*   Hide Tab bar if Sidebery is Active   */
 
-@media(-moz-windows-default-theme) {
-    [sizemode="maximized"][titlepreface*="[S]"] #navigator-toolbox {
-        margin: 8px 0 0
-    }
+@media (-moz-windows-default-theme) {
+  [sizemode="maximized"][titlepreface*="[S]"] #navigator-toolbox {
+    margin: 8px 0 0;
+  }
 
-    [uidensity="compact"][sizemode="normal"]:root {
-        --tab-min-height: 31px !important;
-        --tabs-navbar-shadow-size: 0 !important
-    }
+  [uidensity="compact"][sizemode="normal"]:root {
+    --tab-min-height: 31px !important;
+    --tabs-navbar-shadow-size: 0 !important;
+  }
 
-    [uidensity="normal"][sizemode="normal"]:root {
-        --tab-min-height: 32px !important
-    }
+  [uidensity="normal"][sizemode="normal"]:root {
+    --tab-min-height: 32px !important;
+  }
 }
 
 [titlepreface*="[S]"] #titlebar,
@@ -304,122 +336,123 @@ hbox.titlebar-spacer:nth-child(1) {
 [titlepreface*="[S]"] #tabContextMenu,
 [titlepreface*="[S]"] #sidebar-header,
 [hidden]#sidebar-box {
-    display: none
+  display: none;
 }
 
 /*   Dynamic sidebar   */
 
 [titlepreface*="[S]"] #sidebar-box {
-    max-width: 40px
+  max-width: 40px;
 }
 
 #sidebar-box {
-    /* CHANGE COLLAPSED SIDEBAR HERE */
-    /* border: 2px dashed orangered !important; */
+  /* CHANGE COLLAPSED SIDEBAR HERE */
+  /* border: 2px dashed orangered !important; */
 
-    overflow: hidden;
-    position: fixed;
-    display: inherit;
-    opacity: 0.95;
-    transition: 0.2s;
-    transition-timing-function: ease-in-out;
-    backdrop-filter: blur(5px);
-    z-index: 3;
+  overflow: hidden;
+  position: fixed;
+  display: inherit;
+  opacity: 0.95;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  backdrop-filter: blur(5px);
+  z-index: 3;
 
-    /* width of collapsed sidebar */
-    min-width: calc(40px * 1) !important;
-    max-width: 40px !important;
-    width: calc(40px * 1) !important;
+  /* width of collapsed sidebar */
+  min-width: calc(40px * 1) !important;
+  max-width: 40px !important;
+  width: calc(40px * 1) !important;
 
-    /* default sidebar height */
-    min-height: 100%;
-
+  /* default sidebar height */
+  min-height: 100%;
 }
 
 /* => Sidebar with reduced height
     Commenting this block out makes the sidebar
     use the entire viewport height.
 */
+/*
 #sidebar-box {
-    min-height: 50vh;
-    max-height: calc(100% - 40px);
-    border-radius: 0 0 2em 0;
+  min-height: 50vh;
+  max-height: calc(100% - 40px);
+  border-radius: 0 0 2em 0;
 }
+*/
 
 /* End of sidebar with reduced height */
 
 [inFullscreen] #sidebar-box {
-    max-width: 5px;
-    height: 100%;
-    top: 1px
+  max-width: 5px;
+  height: 100%;
+  top: 1px;
 }
 
 #sidebar-box:hover {
-    /* border: 2px dashed rgb(183, 20, 131) !important; */
-    /* expanded width */
-    min-width: unset !important;
-    max-width: calc(40px * 6) !important;
-    width: calc(40px * 6) !important;
+  /* border: 2px dashed rgb(183, 20, 131) !important; */
+  /* expanded width */
+  min-width: unset !important;
+  max-width: calc(40px * 10) !important;
+  width: calc(40px * 10) !important;
 }
 
 #sidebar {
-    /* THIS IS THE SIDEBAR */
-    /* border: 2px dotted blue !important; */
-    max-width: 50vw !important;
-    width: calc(40px * 6) !important;
-    height: 100%;
-    background-color: transparent;
-    background-image: none !important;
+  /* THIS IS THE SIDEBAR */
+  /* border: 2px dotted blue !important; */
+  max-width: 50vw !important;
+  width: calc(40px * 10) !important;
+  height: 100%;
+  background-color: transparent;
+  background-image: none !important;
 }
 
-.ScrollBox>.scroll-container>.scrollable {
-    background-color: transparent !important;
-    background-image: none !important;
+.ScrollBox > .scroll-container > .scrollable {
+  background-color: transparent !important;
+  background-image: none !important;
 }
 
 #sidebar .container {
-    background-color: var(--bg) !important;
+  background-color: var(--bg) !important;
 }
 
 [titlepreface*="[S]"] #appcontent {
-    /* margin-left: 28px; */
-    margin-left: 34px;
-    /* border: 1px solid green !important; */
+  /* margin-left: 28px; */
+  margin-left: 34px;
+  /* border: 1px solid green !important; */
 }
 
 [inFullscreen] #appcontent {
-    margin-left: -20px;
-    /* border: 1px solid aqua !important; */
+  margin-left: -20px;
+  /* border: 1px solid aqua !important; */
 }
 
-@media(-moz-windows-default-theme) {
-    [titlepreface*="[S]"] #appcontent {
-        margin-left: 100px;
-        /* border: 1px solid darkmagenta !important; */
-    }
+@media (-moz-windows-default-theme) {
+  [titlepreface*="[S]"] #appcontent {
+    margin-left: 100px;
+    /* border: 1px solid darkmagenta !important; */
+  }
 
-    [inFullscreen] #appcontent {
-        /* border: 1px solid magenta !important; */
-        margin-left: 0
-    }
+  [inFullscreen] #appcontent {
+    /* border: 1px solid magenta !important; */
+    margin-left: 0;
+  }
 }
 
 /*   Firefox sidebar   */
 
 #sidebar-header {
-    width: 100% !important
+  width: 100% !important;
 }
 
 #sidebar-header,
 #search-box {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background-color: var(--bg) !important;
-    color: var(--text) !important
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
 }
 
 treechildren::-moz-tree-separator {
-    border: 0 !important
+  border: 0 !important;
 }
 
 /*   Show window buttons - + x */
@@ -436,201 +469,212 @@ treechildren::-moz-tree-separator {
 /*   ______ NAVBAR ______   */
 
 :root:not([uidensity="compact"]) .browser-toolbar #back-button {
-    padding-block: 0 !important;
-    padding-inline: 0 !important;
-    border-radius: 0 !important
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
+  border-radius: 0 !important;
 }
 
-:root:not([uidensity="compact"]) .browser-toolbar #back-button>.toolbarbutton-icon {
-    background-color: var(--bg) !important;
-    border-radius: 0 !important;
-    width: 32px !important;
-    height: 32px !important;
-    padding: 8px !important
+:root:not([uidensity="compact"])
+  .browser-toolbar
+  #back-button
+  > .toolbarbutton-icon {
+  background-color: var(--bg) !important;
+  border-radius: 0 !important;
+  width: 32px !important;
+  height: 32px !important;
+  padding: 8px !important;
 }
 
-:root:not([uidensity="compact"]) .browser-toolbar #back-button:hover>.toolbarbutton-icon {
-    background-color: var(--hover) !important
+:root:not([uidensity="compact"])
+  .browser-toolbar
+  #back-button:hover
+  > .toolbarbutton-icon {
+  background-color: var(--hover) !important;
 }
 
-:root:not([uidensity="compact"]) .browser-toolbar #back-button:active>.toolbarbutton-icon {
-    background-color: var(--active) !important
+:root:not([uidensity="compact"])
+  .browser-toolbar
+  #back-button:active
+  > .toolbarbutton-icon {
+  background-color: var(--active) !important;
 }
 
 :root:not([uidensity="compact"]) {
-    --toolbarbutton-inner-padding: 8px !important
+  --toolbarbutton-inner-padding: 8px !important;
 }
 
 /*   Bookmarks   */
 
 .openintabs-menuitem,
 .bookmarks-actions-menuseparator {
-    display: none
+  display: none;
 }
 
 .bookmark-item menuseparator {
-    height: 8px
+  height: 8px;
 }
 
 /*   Urlbar, Searchbar */
 
-#PlacesToolbarItems>toolbarbutton>label,
+#PlacesToolbarItems > toolbarbutton > label,
 #identity-box,
 #urlbar-input {
-    margin-bottom: 1px !important;
-    color: var(--text) !important
+  margin-bottom: 1px !important;
+  color: var(--text) !important;
 }
 
 .searchbar-textbox {
-    margin-bottom: 2px !important;
-    color: var(--text) !important
+  margin-bottom: 2px !important;
+  color: var(--text) !important;
 }
 
-#PlacesToolbarItems>toolbarbutton:hover>label {
-    color: var(--text-hover) !important
+#PlacesToolbarItems > toolbarbutton:hover > label {
+  color: var(--text-hover) !important;
 }
 
 #urlbar-input::-moz-selection {
-    background-color: var(--text) !important;
-    color: var(--bg)
+  background-color: var(--text) !important;
+  color: var(--bg);
 }
 
 @media (prefers-color-scheme: light) {
-    #urlbar-input::-moz-selection {
-        background-color: #444 !important
-    }
+  #urlbar-input::-moz-selection {
+    background-color: #444 !important;
+  }
 }
 
 #identity-popup {
-    --popup-width: auto !important
+  --popup-width: auto !important;
 }
 
 #urlbar-container {
-    --urlbar-container-height: 40px !important
+  --urlbar-container-height: 40px !important;
 }
 
 :root[uidensity="compact"] #urlbar-container {
-    --urlbar-container-height: 26px !important
+  --urlbar-container-height: 26px !important;
 }
 
 #search-container {
-    margin: -2px 0 !important
+  margin: -2px 0 !important;
 }
 
 #urlbar {
-    color: var(--lwt-toolbarbutton-icon-fill) !important;
-    top: 1px !important
+  color: var(--lwt-toolbarbutton-icon-fill) !important;
+  top: 1px !important;
 }
 
 #urlbar-background,
 #navigator-toolbox #searchbar {
-    background-color: var(--bg) !important
+  background-color: var(--bg) !important;
 }
 
 /* background of urlbar when it's closed */
 #urlbar:not([open]) #urlbar-background,
 #searchbar {
-    box-shadow: none !important;
-    border: 0;
-    border-radius: 0;
-    opacity: 1;
-    filter: blur(0);
-    -webkit-filter: blur(0);
+  box-shadow: none !important;
+  border: 0;
+  border-radius: 0;
+  opacity: 1;
+  filter: blur(0);
+  -webkit-filter: blur(0);
 }
 
 /* background of urlbar when it's open */
-#urlbar[breakout][breakout-extend][open]>#urlbar-background {
-    box-shadow: 0 0 0 1px var(--hover) !important;
-    border: 0;
-    border-radius: 0 0 2em 2em;
-    opacity: 0.5;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+#urlbar[breakout][breakout-extend][open] > #urlbar-background {
+  box-shadow: 0 0 0 1px var(--hover) !important;
+  border: 0;
+  border-radius: 0 0 2em 2em;
+  opacity: 0.5;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 .urlbarView-row {
-    color: var(--text)
+  color: var(--text);
 }
 
 .urlbarView-row[selected] .urlbarView-title {
-    color: var(--text-hover)
+  color: var(--text-hover);
 }
-
 
 #urlbar[breakout][breakout-extend] {
-    left: 0 !important;
-    width: 100% !important
+  left: 0 !important;
+  width: 100% !important;
 }
 
-#urlbar[breakout][breakout-extend]>#urlbar-input-container {
-    padding-inline: 0 !important;
-    padding-block: 0 !important;
-    height: 40px !important
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+  padding-inline: 0 !important;
+  padding-block: 0 !important;
+  height: 40px !important;
 }
 
-[uidensity="compact"] #urlbar[breakout][breakout-extend]>#urlbar-input-container {
-    height: 26px !important
+[uidensity="compact"]
+  #urlbar[breakout][breakout-extend]
+  > #urlbar-input-container {
+  height: 26px !important;
 }
 
 #urlbar .search-one-offs:not([hidden]) {
-    font-family: monospace !important;
-    ;
-    padding-block: 4px !important
+  font-family: monospace !important;
+  padding-block: 4px !important;
 }
 
 #tracking-protection-icon-container {
-    padding: 0 2px !important
+  padding: 0 2px !important;
 }
 
 #identity-box {
-    margin: 0 3px 0 0 !important;
-    padding: 0 2px !important
+  margin: 0 3px 0 0 !important;
+  padding: 0 2px !important;
 }
 
 #identity-icon,
 #identity-icon-label {
-    margin-bottom: 2px !important
+  margin-bottom: 2px !important;
 }
 
 #urlbar[pageproxystate="invalid"] #identity-box {
-    margin: 0 6px 0 11px !important
+  margin: 0 6px 0 11px !important;
 }
 
 #pageActionButton,
 #editBookmarkPanelImage,
-.search-one-offs>hbox:nth-child(1),
+.search-one-offs > hbox:nth-child(1),
 #urlbar-anon-search-settings-compact,
 #searchbar-anon-search-settings {
-    display: none !important
+  display: none !important;
 }
 
 /*   ______ Notifications ______   */
 
 :root .toolbarbutton-badge {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    padding: 0 0 4px !important;
-    color: var(--text) !important;
-    font-size: 7.5pt !important;
-    opacity: .9;
-    text-shadow: -1px 2px 3px var(--bg), -2px 1px 3px var(--bg), -2px 1px 4px var(--bg), -2px 2px 4px var(--bg) !important
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 0 0 4px !important;
+  color: var(--text) !important;
+  font-size: 7.5pt !important;
+  opacity: 0.9;
+  text-shadow: -1px 2px 3px var(--bg), -2px 1px 3px var(--bg),
+    -2px 1px 4px var(--bg), -2px 2px 4px var(--bg) !important;
 }
 
 .toolbarbutton-badge:hover {
-    text-shadow: -1px 2px 3px var(--hover), -2px 1px 3px var(--hover), -2px 1px 4px var(--hover), -2px 2px 4px var(--hover) !important
+  text-shadow: -1px 2px 3px var(--hover), -2px 1px 3px var(--hover),
+    -2px 1px 4px var(--hover), -2px 2px 4px var(--hover) !important;
 }
 
 #PanelUI-button,
 #PanelUI-menu-button {
-    padding-inline: 0 !important;
-    margin-inline: 0 !important
+  padding-inline: 0 !important;
+  margin-inline: 0 !important;
 }
 
 /*   ______ MENU ______   */
 
 #appMenu-addons-button,
 #appMenu-preferences-button {
-    -moz-box-ordinal-group: 0
+  -moz-box-ordinal-group: 0;
 }
 
 .panel-arrow,
@@ -651,29 +695,29 @@ treechildren::-moz-tree-separator {
 [oncommand="openTourPage();"],
 .panel-subview-footer,
 .panel-footer {
-    background-color: var(--menu) !important
+  background-color: var(--menu) !important;
 }
 
 .panel-subview-footer:not([disabled]):hover {
-    background-color: var(--hover) !important
+  background-color: var(--hover) !important;
 }
 
 .panel-subview-body {
-    padding: 0 !important
+  padding: 0 !important;
 }
 
 .panel-arrowcontent {
-    background-color: var(--menu) !important;
-    margin-top: 6px !important;
-    margin-right: 0 !important
+  background-color: var(--menu) !important;
+  margin-top: 6px !important;
+  margin-right: 0 !important;
 }
 
 panel {
-    margin-inline: -16px !important
+  margin-inline: -16px !important;
 }
 
 :root[uidensity="compact"] panel {
-    margin-inline: -14px !important
+  margin-inline: -14px !important;
 }
 
 menupopup,
@@ -683,41 +727,47 @@ menucaption,
 menupopup menu,
 tooltip,
 panelview {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background-color: var(--menu) !important;
-    color: var(--text) !important;
-    padding: 3px
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background-color: var(--menu) !important;
+  color: var(--text) !important;
+  padding: 3px;
 }
 
 #appMenu-popup toolbarbutton,
 #widget-overflow-mainView toolbarbutton {
-    padding: 6px !important
+  padding: 6px !important;
 }
 
-menuitem>label {
-    margin-bottom: 2px !important
+menuitem > label {
+  margin-bottom: 2px !important;
 }
 
 menupopup {
-    padding: 0 !important
+  padding: 0 !important;
 }
 
-menupopup>menu>menupopup {
-    margin-inline-start: 0 !important;
-    margin-top: 0 !important
+menupopup > menu > menupopup {
+  margin-inline-start: 0 !important;
+  margin-top: 0 !important;
 }
 
 menuitem:hover,
 menupopup menu:hover,
-toolbarbutton:hover:not([disabled], .titlebar-close, .close-icon, #nav-bar #back-button, toolbaritem.all-tabs-item[selected] > toolbarbutton),
+toolbarbutton:hover:not(
+    [disabled],
+    .titlebar-close,
+    .close-icon,
+    #nav-bar #back-button,
+    toolbaritem.all-tabs-item[selected] > toolbarbutton
+  ),
 .menu-iconic:hover,
 .menu-iconic[open],
 .downloadMainArea:hover,
 .downloadButton:hover,
 #downloadsHistory:hover {
-    background-color: var(--hover) !important;
-    color: var(--text-hover) !important
+  background-color: var(--hover) !important;
+  color: var(--text-hover) !important;
 }
 
 #identity-box:hover,
@@ -726,93 +776,93 @@ toolbarbutton:hover:not([disabled], .titlebar-close, .close-icon, #nav-bar #back
 #tracking-protection-icon-container[open],
 .urlbar-icon-wrapper:hover,
 .urlbar-icon-wrapper[open] {
-    background-color: var(--hover) !important
+  background-color: var(--hover) !important;
 }
 
 .downloadsPanelFooterButton:hover {
-    outline: 0 !important
+  outline: 0 !important;
 }
 
 #statuspanel-label {
-    background-color: var(--bg) !important;
-    color: var(--text) !important;
-    opacity: .7
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+  opacity: 0.7;
 }
 
 #alertBox {
-    background-color: var(--bg) !important;
-    color: var(--text) !important;
-    border: 1px solid var(--text) !important
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--text) !important;
 }
 
 /*   ______ 'Find' (search) bar (Ctrl + F) ______   */
 
 /* Move the "Find" Bar to the top of the page */
-.browserContainer>findbar {
-    -moz-box-ordinal-group: 0;
-    /* -moz-box-ordinal-group seemingly stopped working,
+.browserContainer > findbar {
+  -moz-box-ordinal-group: 0;
+  /* -moz-box-ordinal-group seemingly stopped working,
     on v112 or v113 so I changed it to an absolute position below. */
-    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition-duration: 200ms;
-    /* extra styling - move it to top right, narrower, and rounded */
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1em;
-    width: 100%;
-    border-radius: 1em;
-    /* this is a vertical list now */
-    max-width: 20em;
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition-duration: 200ms;
+  /* extra styling - move it to top right, narrower, and rounded */
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
+  width: 100%;
+  border-radius: 1em;
+  /* this is a vertical list now */
+  max-width: 20em;
 
-    /* unfortunately this blur doesn't work - left as example */
-    background-image: none;
-    -webkit-backdrop-filter: blur(6px);
-    -moz-backdrop-filter: blur(6px);
-    -ms-backdrop-filter: blur(6px);
-    -o-backdrop-filter: blur(6px);
-    backdrop-filter: blur(6px);
+  /* unfortunately this blur doesn't work - left as example */
+  background-image: none;
+  -webkit-backdrop-filter: blur(6px);
+  -moz-backdrop-filter: blur(6px);
+  -ms-backdrop-filter: blur(6px);
+  -o-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 
-    /* animate opacity change */
-    /* background-color: rgba(0, 0, 0, 1); */
-    transition: opacity 200ms ease-in-out;
-    opacity: 0.6;
+  /* animate opacity change */
+  /* background-color: rgba(0, 0, 0, 1); */
+  transition: opacity 200ms ease-in-out;
+  opacity: 0.6;
 }
 
 /* make it opaque when hovered */
-.browserContainer>findbar:hover {
-    /* animate opacity change */
-    transition: opacity 200ms ease-in-out;
-    opacity: 1;
+.browserContainer > findbar:hover {
+  /* animate opacity change */
+  transition: opacity 200ms ease-in-out;
+  opacity: 1;
 }
 
-findbar>.findbar-container {
-    /* this is a horizontal list by default - make it a vertical list and left align */
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100% !important;
-    height: auto !important;
-    align-items: flex-start !important;
-    /* that is not aligning left. Try this: */
-    margin: 0 !important;
-    padding: 0 !important;
-    /* inherit background */
-    background-color: inherit !important;
+findbar > .findbar-container {
+  /* this is a horizontal list by default - make it a vertical list and left align */
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  height: auto !important;
+  align-items: flex-start !important;
+  /* that is not aligning left. Try this: */
+  margin: 0 !important;
+  padding: 0 !important;
+  /* inherit background */
+  background-color: inherit !important;
 }
 
 /* pad all children e.g. text input, buttons */
-findbar>.findbar-container>* {
-    padding: 1em !important;
-    background-color: inherit !important;
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0 !important;
+findbar > .findbar-container > * {
+  padding: 1em !important;
+  background-color: inherit !important;
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0 !important;
 }
 
-findbar>.findbar-closebutton {
-    position: absolute;
-    bottom: 1em;
-    right: 0;
-    cursor: pointer;
+findbar > .findbar-closebutton {
+  position: absolute;
+  bottom: 1em;
+  right: 0;
+  cursor: pointer;
 }
 
 /* text input for search */
@@ -821,43 +871,43 @@ findbar>.findbar-closebutton {
 .findbar-container,
 .findbar-textbox:not([status="notfound"]),
 .findbar-closebutton.close-icon {
-    background-color: var(--bg) !important;
-    padding: 0 0.5em !important
+  background-color: var(--bg) !important;
+  padding: 0 0.5em !important;
 }
 
 .findbar-find-previous:not(:hover),
 .findbar-find-next:not(:hover) {
-    background: var(--bg) !important;
+  background: var(--bg) !important;
 }
 
 /*   ______ Library ______   */
 
 #placesToolbar {
-    padding: 0 4px 0 0 !important
+  padding: 0 4px 0 0 !important;
 }
 
-#placesToolbar>toolbarbutton {
-    padding: 7px !important
+#placesToolbar > toolbarbutton {
+  padding: 7px !important;
 }
 
-#placesMenu>menu {
-    padding: 4px !important
+#placesMenu > menu {
+  padding: 4px !important;
 }
 
-#placesMenu>menu>.menubar-text {
-    color: var(--text)
+#placesMenu > menu > .menubar-text {
+  color: var(--text);
 }
 
 :root {
-    --organizer-text-secondary-color: transparent !important
+  --organizer-text-secondary-color: transparent !important;
 }
 
 #searchFilter {
-    background-color: var(--hover) !important
+  background-color: var(--hover) !important;
 }
 
 /*   ______ About Firefox ______   */
 
 #aboutDialogContainer {
-    background-color: #171227 !important
+  background-color: #171227 !important;
 }

@@ -542,7 +542,7 @@ treechildren::-moz-tree-separator {
 
 #urlbar-input::-moz-selection {
   background-color: var(--text-highlight) !important;
-  color: var(--bg);
+  color: var(--text);
 }
 
 @media (prefers-color-scheme: light) {

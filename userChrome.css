@@ -72,7 +72,9 @@ SECTION: BLURRED TRANSPARENCY
 @import url("blurredfox/parts/customization-window.css");
 
 #urlbar-input {
-  font-family: monospace !important;
+  font-family: "JetBrains Mono", "Intel One Mono", "Cascadia Mono", Menlo,
+    "DejaVu Sans Mono", Consolas, Courier, Courier New, Fixedsys, Lucida Console,
+    Terminal, monospace !important;
 }
 
 #urlbar[breakout][breakout-extend][open] {
@@ -90,7 +92,9 @@ SECTION: BLURRED TRANSPARENCY
   -ms-backdrop-filter: blur(6px) !important;
   -o-backdrop-filter: blur(6px) !important;
   backdrop-filter: blur(6px) !important;
-  font-family: monospace !important;
+  font-family: "JetBrains Mono", "Intel One Mono", "Cascadia Mono", Menlo,
+    "DejaVu Sans Mono", Consolas, Courier, Courier New, Fixedsys, Lucida Console,
+    Terminal, monospace !important;
   border-radius: 0 0 2em 2em;
   transition: all 0.2s ease-in-out;
   height: 0;
@@ -138,14 +142,15 @@ Based on: https://github.com/ongots/firefox-sidebery-minimal-style
   * {
     --bg: rgb(9, 9, 9);
     --menu: #151515;
-    --hover: #10201b8e;
+    --hover: #37cfc38e;
     --active: #7a00c096;
     --text: #ddd;
+    --text-highlight: #1555518e;
     --text-hover: #eee;
     --text-active: #fff;
     --url-color: #8f94d2;
     --tab-line-color: rgb(41, 248, 158);
-    --lwt-toolbarbutton-icon-fill: rgb(176, 255, 217) !important;
+    --lwt-toolbarbutton-icon-fill: rgb(192, 192, 192) !important;
   }
 
   .menu-right,
@@ -529,18 +534,12 @@ treechildren::-moz-tree-separator {
   color: var(--text) !important;
 }
 
-#urlbar ::-moz-selection,
-.searchbar-textbox ::-moz-selection {
-  background-color: #ac4a63 !important;
-  color: #1b1b1b !important;
-}
-
 #PlacesToolbarItems > toolbarbutton:hover > label {
   color: var(--text-hover) !important;
 }
 
 #urlbar-input::-moz-selection {
-  background-color: var(--text) !important;
+  background-color: var(--text-highlight) !important;
   color: var(--bg);
 }
 
@@ -623,7 +622,9 @@ treechildren::-moz-tree-separator {
 }
 
 #urlbar .search-one-offs:not([hidden]) {
-  font-family: monospace !important;
+  font-family: "JetBrains Mono", "Intel One Mono", "Cascadia Mono", Menlo,
+    "DejaVu Sans Mono", Consolas, Courier, Courier New, Fixedsys, Lucida Console,
+    Terminal, monospace !important;
   padding-block: 4px !important;
 }
 

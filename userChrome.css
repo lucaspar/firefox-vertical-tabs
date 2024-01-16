@@ -106,8 +106,8 @@ SECTION: BLURRED TRANSPARENCY
 }
 
 .urlbarView-body-inner {
-  /*     border: 1px solid royalblue !important; */
-  /*     background-color: transparent; */
+  /* border: 1px solid royalblue !important; */
+  background-color: transparent;
   color: white;
   padding: var(--s4);
   animation-duration: 1s;
@@ -391,15 +391,16 @@ hbox.titlebar-spacer:nth-child(1) {
   /* border: 2px dashed rgb(183, 20, 131) !important; */
   /* expanded width */
   min-width: unset !important;
-  max-width: calc(40px * 10) !important;
-  width: calc(40px * 10) !important;
+  max-width: calc(40px * 8) !important;
+  width: calc(40px * 8) !important;
+  transition-delay: 400ms;
 }
 
 #sidebar {
   /* THIS IS THE SIDEBAR */
   /* border: 2px dotted blue !important; */
   max-width: 50vw !important;
-  width: calc(40px * 10) !important;
+  width: calc(40px * 8) !important;
   height: 100%;
   background-color: transparent;
   background-image: none !important;
@@ -526,6 +527,12 @@ treechildren::-moz-tree-separator {
 .searchbar-textbox {
   margin-bottom: 2px !important;
   color: var(--text) !important;
+}
+
+#urlbar ::-moz-selection,
+.searchbar-textbox ::-moz-selection {
+  background-color: #ac4a63 !important;
+  color: #1b1b1b !important;
 }
 
 #PlacesToolbarItems > toolbarbutton:hover > label {

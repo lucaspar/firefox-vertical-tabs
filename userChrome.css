@@ -343,8 +343,8 @@ hbox.titlebar-spacer:nth-child(1) {
 #sidebar-box {
 
     /* uncomment to enable reduced height */
-    min-height: 50vh;
-    max-height: calc(100% - 40px);
+    /* min-height: 50vh;
+    max-height: calc(100% - 40px); */
     /* ----------------------------------- */
 
     border-radius: 0 0 2em 0;

@@ -51,3 +51,7 @@ You can use the Browser Toolbox to inspect extensions. Additionally, you can ins
 4. Press "Inspect" and a console window should open.
 5. Change *targeted iframe* if needed by clicking the blue "layout" icon
     in the upper right corner, close to the ellipsis menu icon.
+
+## Resources
+
++ [Firefox source code (GitHub mirror)](https://github.com/mozilla/gecko-dev/)

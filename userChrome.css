@@ -381,24 +381,24 @@ hbox.titlebar-spacer:nth-child(1) {
     background-color: var(--bg) !important;
 }
 
-[titlepreface*="[S]"] #appcontent {
+[titlepreface*="[S]"] #tabbrowser-tabbox {
     /* margin-left: 28px; */
-    margin-left: 34px;
+    margin-left: 34px !important;
     /* border: 1px solid green !important; */
 }
 
-[inFullscreen] #appcontent {
+[inFullscreen] #tabbrowser-tabbox {
     margin-left: -20px;
     /* border: 1px solid aqua !important; */
 }
 
 @media(-moz-windows-default-theme) {
-    [titlepreface*="[S]"] #appcontent {
+    [titlepreface*="[S]"] #tabbrowser-tabbox {
         margin-left: 100px;
         /* border: 1px solid darkmagenta !important; */
     }
 
-    [inFullscreen] #appcontent {
+    [inFullscreen] #tabbrowser-tabbox {
         /* border: 1px solid magenta !important; */
         margin-left: 0
     }
@@ -574,7 +574,6 @@ treechildren::-moz-tree-separator {
 
 #urlbar .search-one-offs:not([hidden]) {
     font-family: monospace !important;
-    ;
     padding-block: 4px !important
 }
 

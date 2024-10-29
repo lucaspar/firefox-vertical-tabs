@@ -33,14 +33,14 @@ END OF SIDEBERY STYLES SECTION
 
 /*
 =============================
-SECTION: BLURRED TRANSPARENCY
-(and monospace font for urlbar)
+SECTION: URLBAR
+- Monospace font for urlbar
 =============================
 */
-@import url('blurredfox/parts/customization-window.css');
 
 #urlbar-input {
     font-family: monospace !important;
+    /* text-align: center !important; */
 }
 
 #urlbar[breakout][breakout-extend][open] {
@@ -341,14 +341,23 @@ hbox.titlebar-spacer:nth-child(1) {
     use the entire viewport height.
 */
 #sidebar-box {
+
+    /* uncomment to enable reduced height */
     min-height: 50vh;
     max-height: calc(100% - 40px);
+    /* ----------------------------------- */
+
     border-radius: 0 0 2em 0;
 }
 
 /* End of sidebar with reduced height */
 
 [inFullscreen] #sidebar-box {
+
+    /* shows/hides sidebar in fullscreen */
+    display: none;
+    /* end of show/hide sidebar in fullscreen */
+
     max-width: 5px;
     height: 100%;
     top: 1px
@@ -382,13 +391,13 @@ hbox.titlebar-spacer:nth-child(1) {
 }
 
 [titlepreface*="[S]"] #tabbrowser-tabbox {
-    /* margin-left: 28px; */
     margin-left: 34px !important;
     /* border: 1px solid green !important; */
 }
 
+/* shows/hides sidebar when in fullscreen */
 [inFullscreen] #tabbrowser-tabbox {
-    margin-left: -20px;
+    margin-left: 0 !important;
     /* border: 1px solid aqua !important; */
 }
 
@@ -423,15 +432,6 @@ treechildren::-moz-tree-separator {
 }
 
 /*   Show window buttons - + x */
-
-/* @media(-moz-windows-default-theme){[sizemode="maximized"][titlepreface*="[S]"] #navigator-toolbox {margin: inherit}}
-[sizemode="maximized"][titlepreface*="[S]"] #titlebar,
-[sizemode="normal"][titlepreface*="[S]"] #titlebar {display: inherit !important; margin-bottom: -29px}
-[inFullscreen][titlepreface*="[S]"] #titlebar {display: inherit !important; margin-bottom: -24px}
-[sizemode="maximized"][titlepreface*="[S]"] #nav-bar,
-[sizemode="normal"][titlepreface*="[S]"] #nav-bar {margin-right: 138px}
-[inFullscreen][titlepreface*="[S]"] #nav-bar {margin-right: 108px}
-[inFullscreen][titlepreface*="[S]"] #TabsToolbar-customization-target {display:none} */
 
 /*   ______ NAVBAR ______   */
 

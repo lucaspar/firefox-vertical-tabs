@@ -700,36 +700,22 @@ panel {
     margin-inline: -14px !important
 }
 
-menupopup,
-menuseparator,
-menuitem:not([active]),
-menucaption,
-menupopup menu,
-tooltip,
-panelview {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background-color: var(--menu) !important;
-    color: var(--text) !important;
-    padding: 3px
-}
-
 #appMenu-popup toolbarbutton,
 #widget-overflow-mainView toolbarbutton {
-    padding: 6px !important
+    padding: 6px !important;
 }
 
 menuitem>label {
-    margin-bottom: 2px !important
+    margin-bottom: 2px !important;
 }
 
 menupopup {
-    padding: 0 !important
+    padding: 0 !important;
 }
 
 menupopup>menu>menupopup {
     margin-inline-start: 0 !important;
-    margin-top: 0 !important
+    margin-top: 0 !important;
 }
 
 menuitem:hover,
@@ -741,7 +727,7 @@ toolbarbutton:hover:not([disabled], .titlebar-close, .close-icon, #nav-bar #back
 .downloadButton:hover,
 #downloadsHistory:hover {
     background-color: var(--hover) !important;
-    color: var(--text-hover) !important
+    color: var(--text-hover) !important;
 }
 
 #identity-box:hover,

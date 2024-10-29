@@ -63,7 +63,13 @@ SECTION: URLBAR
     transition: all 0.2s ease-in-out;
     height: 0;
     margin: 0 !important;
-    padding: 0 !important
+    padding: 0 !important;
+}
+
+@media (prefers-reduced-motion) {
+    #urlbar[breakout][breakout-extend][open] {
+        transition: none !important;
+    }
 }
 
 .menupopup {
@@ -86,12 +92,25 @@ SECTION: URLBAR
     box-shadow: 2px 2px 8px #00000021;
 }
 
+@media (prefers-reduced-motion) {
+    .urlbarView-body-inner {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
 #urlbar-background {
     border: 0 !important;
     /* border: 1px solid cyan !important; */
     /* enable eased transitions */
     display: none !important;
     transition: all 0.2s ease-in-out;
+}
+
+@media (prefers-reduced-motion) {
+    #urlbar-background {
+        transition: none !important;
+    }
 }
 
 /*
@@ -334,6 +353,12 @@ hbox.titlebar-spacer:nth-child(1) {
     /* default sidebar height */
     min-height: 100%;
 
+}
+
+@media (prefers-reduced-motion) {
+    #sidebar-box {
+        transition: none !important
+    }
 }
 
 /* => Sidebar with reduced height
@@ -782,6 +807,16 @@ toolbarbutton:hover:not([disabled], .titlebar-close, .close-icon, #nav-bar #back
     /* animate opacity change */
     transition: opacity 200ms ease-in-out;
     opacity: 1;
+}
+
+@media (prefers-reduced-motion) {
+    .browserContainer>findbar {
+        transition: none !important;
+    }
+
+    .browserContainer>findbar:hover {
+        transition: none !important;
+    }
 }
 
 findbar>.findbar-container {

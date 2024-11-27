@@ -40,7 +40,7 @@ SECTION: URLBAR
 
 #urlbar-input {
     font-family: monospace !important;
-    /* text-align: center !important; */
+    text-align: center !important;
 }
 
 #urlbar[breakout][breakout-extend][open] {
@@ -79,17 +79,25 @@ SECTION: URLBAR
     backdrop-filter: saturate(180%) blur(35px);
 }
 
+/* drop-down part of urlbar */
+.urlbarView {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 20, 0.7);
+    /* background-image: url("file:///home/user/full-path-to-image/noise-gen/noise.png"); */
+    border-radius: 0 0 0.5em 0.5em;
+    padding: 1em;
+}
+
 .urlbarView-body-inner {
     /*     border: 1px solid royalblue !important; */
-    /*     background-color: transparent; */
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    box-shadow: 2px 2px 8px #00000021;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.192);
     color: white;
     padding: var(--s4);
-    animation-duration: 1s;
-    animation-delay: 2s;
-    animation-fill-mode: both;
     transition: 0.2s;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.192);
-    box-shadow: 2px 2px 8px #00000021;
 }
 
 @media (prefers-reduced-motion) {
@@ -99,10 +107,16 @@ SECTION: URLBAR
     }
 }
 
+.urlbarView-favicon {
+    /* applies shadow to favicons of urlbar dropdown to make sure dark ones are visible in dark backgrounds */
+    filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.3));
+}
+
 #urlbar-background {
     border: 0 !important;
     /* border: 1px solid cyan !important; */
     /* enable eased transitions */
+    backdrop-filter: blur(10px);
     display: none !important;
     transition: all 0.2s ease-in-out;
 }
@@ -490,11 +504,17 @@ treechildren::-moz-tree-separator {
 
 .openintabs-menuitem,
 .bookmarks-actions-menuseparator {
-    display: none
+    display: none;
 }
 
 .bookmark-item menuseparator {
-    height: 8px
+    height: 8px;
+}
+
+/*   Remove window buttons (close, minimize, restore)   */
+
+.titlebar-buttonbox-container {
+    display: none;
 }
 
 /*   Urlbar, Searchbar */
@@ -503,53 +523,53 @@ treechildren::-moz-tree-separator {
 #identity-box,
 #urlbar-input {
     margin-bottom: 1px !important;
-    color: var(--text) !important
+    color: var(--text) !important;
 }
 
 .searchbar-textbox {
     margin-bottom: 2px !important;
-    color: var(--text) !important
+    color: var(--text) !important;
 }
 
 #PlacesToolbarItems>toolbarbutton:hover>label {
-    color: var(--text-hover) !important
+    color: var(--text-hover) !important;
 }
 
 #urlbar-input::-moz-selection {
     background-color: var(--text) !important;
-    color: var(--bg)
+    color: var(--bg);
 }
 
 @media (prefers-color-scheme: light) {
     #urlbar-input::-moz-selection {
-        background-color: #444 !important
+        background-color: #444 !important;
     }
 }
 
 #identity-popup {
-    --popup-width: auto !important
+    --popup-width: auto !important;
 }
 
 #urlbar-container {
-    --urlbar-container-height: 40px !important
+    --urlbar-container-height: 40px !important;
 }
 
 :root[uidensity="compact"] #urlbar-container {
-    --urlbar-container-height: 26px !important
+    --urlbar-container-height: 26px !important;
 }
 
 #search-container {
-    margin: -2px 0 !important
+    margin: -2px 0 !important;
 }
 
 #urlbar {
     color: var(--lwt-toolbarbutton-icon-fill) !important;
-    top: 1px !important
+    top: 1px !important;
 }
 
 #urlbar-background,
 #navigator-toolbox #searchbar {
-    background-color: var(--bg) !important
+    background-color: var(--bg) !important;
 }
 
 /* background of urlbar when it's closed */
@@ -565,59 +585,66 @@ treechildren::-moz-tree-separator {
 
 /* background of urlbar when it's open */
 #urlbar[breakout][breakout-extend][open]>#urlbar-background {
-    box-shadow: 0 0 0 1px var(--hover) !important;
-    border: 0;
     border-radius: 0 0 2em 2em;
-    opacity: 0.5;
+    border: 0;
+    box-shadow: 0 0 0 1px var(--hover) !important;
+    display: inherit;
     filter: blur(2px);
+    opacity: 0.5;
     -webkit-filter: blur(2px);
 }
 
+/* colors of urlbar items */
 .urlbarView-row {
-    color: var(--text)
+    color: var(--text);
+}
+
+.urlbarView-row[selected] {
+    background-color: var(--hover) !important;
+    border-radius: 0.2em;
 }
 
 .urlbarView-row[selected] .urlbarView-title {
-    color: var(--text-hover)
+    color: var(--text-hover);
 }
 
 
 #urlbar[breakout][breakout-extend] {
     left: 0 !important;
-    width: 100% !important
+    width: 100% !important;
 }
 
 #urlbar[breakout][breakout-extend]>#urlbar-input-container {
     padding-inline: 0 !important;
     padding-block: 0 !important;
-    height: 40px !important
+    height: 40px !important;
 }
 
 [uidensity="compact"] #urlbar[breakout][breakout-extend]>#urlbar-input-container {
-    height: 26px !important
+    height: 26px !important;
 }
 
 #urlbar .search-one-offs:not([hidden]) {
     font-family: monospace !important;
-    padding-block: 4px !important
+    padding-block: 4px !important;
 }
 
 #tracking-protection-icon-container {
-    padding: 0 2px !important
+    padding: 0 2px !important;
 }
 
 #identity-box {
     margin: 0 3px 0 0 !important;
-    padding: 0 2px !important
+    padding: 0 2px !important;
 }
 
 #identity-icon,
 #identity-icon-label {
-    margin-bottom: 2px !important
+    margin-bottom: 2px !important;
 }
 
 #urlbar[pageproxystate="invalid"] #identity-box {
-    margin: 0 6px 0 11px !important
+    margin: 0 6px 0 11px !important;
 }
 
 #pageActionButton,
@@ -625,7 +652,7 @@ treechildren::-moz-tree-separator {
 .search-one-offs>hbox:nth-child(1),
 #urlbar-anon-search-settings-compact,
 #searchbar-anon-search-settings {
-    display: none !important
+    display: none !important;
 }
 
 /*   ______ Notifications ______   */
@@ -637,17 +664,17 @@ treechildren::-moz-tree-separator {
     color: var(--text) !important;
     font-size: 7.5pt !important;
     opacity: .9;
-    text-shadow: -1px 2px 3px var(--bg), -2px 1px 3px var(--bg), -2px 1px 4px var(--bg), -2px 2px 4px var(--bg) !important
+    text-shadow: -1px 2px 3px var(--bg), -2px 1px 3px var(--bg), -2px 1px 4px var(--bg), -2px 2px 4px var(--bg) !important;
 }
 
 .toolbarbutton-badge:hover {
-    text-shadow: -1px 2px 3px var(--hover), -2px 1px 3px var(--hover), -2px 1px 4px var(--hover), -2px 2px 4px var(--hover) !important
+    text-shadow: -1px 2px 3px var(--hover), -2px 1px 3px var(--hover), -2px 1px 4px var(--hover), -2px 2px 4px var(--hover) !important;
 }
 
 #PanelUI-button,
 #PanelUI-menu-button {
     padding-inline: 0 !important;
-    margin-inline: 0 !important
+    margin-inline: 0 !important;
 }
 
 /*   ______ 'Find' (search) bar (Ctrl + F) ______   */
@@ -737,7 +764,7 @@ findbar>.findbar-closebutton {
 .findbar-textbox:not([status="notfound"]),
 .findbar-closebutton.close-icon {
     background-color: var(--bg) !important;
-    padding: 0 0.5em !important
+    padding: 0 0.5em !important;
 }
 
 .findbar-find-previous:not(:hover),
@@ -748,31 +775,31 @@ findbar>.findbar-closebutton {
 /*   ______ Library ______   */
 
 #placesToolbar {
-    padding: 0 4px 0 0 !important
+    padding: 0 4px 0 0 !important;
 }
 
 #placesToolbar>toolbarbutton {
-    padding: 7px !important
+    padding: 7px !important;
 }
 
 #placesMenu>menu {
-    padding: 4px !important
+    padding: 4px !important;
 }
 
 #placesMenu>menu>.menubar-text {
-    color: var(--text)
+    color: var(--text);
 }
 
 :root {
-    --organizer-text-secondary-color: transparent !important
+    --organizer-text-secondary-color: transparent !important;
 }
 
 #searchFilter {
-    background-color: var(--hover) !important
+    background-color: var(--hover) !important;
 }
 
 /*   ______ About Firefox ______   */
 
 #aboutDialogContainer {
-    background-color: #171227 !important
+    background-color: #171227 !important;
 }

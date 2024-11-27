@@ -15,7 +15,7 @@ from PIL import Image
 
 def main() -> None:
     width, height = 512, 512
-    max_opacity = int(0.05 * 255)
+    max_opacity = int(0.1 * 255)
 
     image = Image.new("RGBA", (width, height), (0, 0, 0, 0))
 

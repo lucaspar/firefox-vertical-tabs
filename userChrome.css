@@ -330,7 +330,7 @@ hbox.titlebar-spacer:nth-child(1) {
     }
 }
 
-[titlepreface*="[S]"] #titlebar,
+[titlepreface*="[S]"] .toolbar-items,
 [titlepreface*="[S]"] #tabbrowser-tabs,
 [titlepreface*="[S]"] #tabContextMenu,
 [titlepreface*="[S]"] #sidebar-header,

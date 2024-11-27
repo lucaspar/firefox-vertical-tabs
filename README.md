@@ -54,4 +54,5 @@ You can use the Browser Toolbox to inspect extensions. Additionally, you can ins
 
 ## Resources
 
++ [Firefox release notes](https://www.mozilla.org/en-US/firefox/releasenotes/)
 + [Firefox source code (GitHub mirror)](https://github.com/mozilla/gecko-dev/)

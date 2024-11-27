@@ -46,7 +46,6 @@ SECTION: URLBAR
 #urlbar[breakout][breakout-extend][open] {
     /* border: 1px dotted orangered !important; */
     background-color: #0d1320d3;
-    background-image: url(./image/noise-512x512.png);
     /*
         attempt of blurring the background of the expanded
         tab area - unfortunately it does not blur the page
@@ -74,7 +73,6 @@ SECTION: URLBAR
 
 .menupopup {
     /* border: 2px dashed rgb(194, 133, 41) !important; */
-    background-image: url(image/noise-512x512.png) !important;
     -webkit-backdrop-filter: blur(32px) !important;
     backdrop-filter: saturate(180%) blur(35px);
 }

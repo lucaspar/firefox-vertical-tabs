@@ -13,10 +13,11 @@
     3. Copy and paste the `SIDEBERY STYLES` section in the [userChrome.css](./userChrome.css) to
         Sidebery's Styles Editor → Sidebar.
     4. Optionally sync Sidebery settings to Firefox account to get other customizations.
-2. Go to `about:support` → copy 'user folder' location, setting it as the variable `$FF_USER_DIR`.
+2. Go to `about:support` → copy the 'Profile Directory' location, setting it as the variable `FF_USER_DIR`: (`FF_USER_DIR=/path/to/profile/dir`).
 3. Move CSS files to FF user location:
-    + `mv userChrome.css $FF_USER_DIR/userChrome.css`
-    + `mv userContent.css $FF_USER_DIR/userContent.css`
+    + `mkdir ${FF_USER_DIR}/chrome`
+    + `mv userChrome.css ${FF_USER_DIR}/chrome/userChrome.css`
+    + `mv userContent.css ${FF_USER_DIR}/chrome/userContent.css`
 4. Go to about:config → `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
 5. Restart Firefox (`about:restartrequired` to reopen your current tabs).
 

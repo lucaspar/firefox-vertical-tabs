@@ -13,45 +13,51 @@
     3. Copy and paste the `SIDEBERY STYLES` section in the [userChrome.css](./userChrome.css) to
         Sidebery's Styles Editor → Sidebar.
     4. Optionally sync Sidebery settings to Firefox account to get other customizations.
-2. Go to `about:support` → copy the 'Profile Directory' location, setting it as the variable `FF_USER_DIR`: (`FF_USER_DIR=/path/to/profile/dir`).
+2. Go to `about:support` → copy the 'Profile Directory' location, setting it as the variable `FF_USER_DIR`: `FF_USER_DIR="/path/to/profile/dir"`.
 3. Move CSS files to FF user location:
-    + `mkdir ${FF_USER_DIR}/chrome`
-    + `mv userChrome.css ${FF_USER_DIR}/chrome/userChrome.css`
-    + `mv userContent.css ${FF_USER_DIR}/chrome/userContent.css`
-4. Go to about:config → `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
+    + `mkdir -p "${FF_USER_DIR}/chrome"`
+    + `mv userChrome.css "${FF_USER_DIR}/chrome/userChrome.css"`
+    + `mv userContent.css "${FF_USER_DIR}/chrome/userContent.css"`
+4. Go to `about:config` → `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
 5. Restart Firefox (`about:restartrequired` to reopen your current tabs).
 
 ## Tweaking and Debugging
 
-How to inspect browser interface ([source](https://superuser.com/questions/1608096/how-to-inspect-firefoxs-ui)).
+### How to inspect the browser interface
+
+> [Source](https://superuser.com/questions/1608096/how-to-inspect-firefoxs-ui)
 
 1. Enable the Browser Toolbox
 
-    Press F12 to open the Page Inspector.
-    Alternate: Right click the page then "Inspect Element (Q)".
+    Press `F12` to open the Page Inspector.
 
-    Press F1 to open the Page Inspector Settings.
-    Alternate: In the top right of the Page Inspector next to the close button; press the "⋯" button then "Settings".
+    > Alternate: Right click the page then `Inspect Element (Q)`.
+
+    Press `F1` to open the Page Inspector Settings.
+
+    > Alternate: In the top right of the Page Inspector next to the close button; press the `⋯` button, then `Settings`.
 
     Ensure the following settings are checked:
-        "Enable Browser chrome and add-on debugging toolbox"
-        "Enable remote debugging"
+
+    + `Enable Browser chrome and add-on debugging toolbox`
+    + `Enable remote debugging`
 
 2. Open the Browser Toolbox
 
-    Press alt, "Tools", "Web Developer" then "Browser Toolbox".
-    Alternate: Press `ctrl+alt+shift+i`
+    Press `Ctrl`+`Alt`+`Shift`+`I`
+
+    > Alternate: Press `Alt` on the keyboard to bring the window menu → `Tools` → `Web Developer` → `Browser Toolbox`.
 
 ### How to inspect extensions interface
 
-You can use the Browser Toolbox to inspect extensions. Additionally, you can inspect extensions through about:debugging.
+You can use the [Browser Toolbox](#how-to-inspect-the-browser-interface) to inspect extensions, or do it through `about:debugging`:
 
 1. Navigate to `about:debugging`.
-2. Go to the "This Firefox" page.
+2. Go to the `This Firefox` page.
 3. Find the extension you want to inspect.
-4. Press "Inspect" and a console window should open.
-5. Change *targeted iframe* if needed by clicking the blue "layout" icon
-    in the upper right corner, close to the ellipsis menu icon.
+4. Press `Inspect` and a console window should open.
+5. Change *`targeted iframe`* if needed by clicking the blue "layout" icon
+    in the upper right corner, located close to the ellipsis menu icon.
 
 ## Resources
 

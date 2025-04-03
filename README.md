@@ -2,6 +2,10 @@
 
 ![vertical-tabs-demo-cut](https://github.com/lucaspar/firefox-vertical-tabs/assets/7535699/62239850-2f2a-4a06-86f4-59019a976900)
 
+> [!TIP]
+>
+> If using Firefox 137 or later, go to `about:config`, set `sidebar.visibility` to `expand-on-hover`.
+
 ## Setting it up
 
 0. Install the [Sidebery extension](https://addons.mozilla.org/en-US/firefox/addon/sidebery/).

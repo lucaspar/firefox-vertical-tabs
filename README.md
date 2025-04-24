@@ -5,6 +5,8 @@
 > [!TIP]
 >
 > If using Firefox 137 or later, go to `about:config`, set `sidebar.visibility` to `expand-on-hover`.
+> 
+> Note that it will eat 1px horizontally, so it may break some CSS by calling wrong media query, for example on Bootstrap - your 1200px will be 1199px, resulting in less optimal UI (solution wanted).
 
 ## Setting it up
 

@@ -4,7 +4,7 @@
 
 > [!TIP]
 >
-> If using Firefox 137 or later, go to `about:config`, set `sidebar.visibility` to `expand-on-hover`.
+> If using Firefox 137, upgrade it to 138. Alternatively, go to `about:config`, set `sidebar.visibility` to `expand-on-hover`.
 
 ## Setting it up
 
@@ -23,8 +23,7 @@
     + `mv userChrome.css "${FF_USER_DIR}/chrome/userChrome.css"`
     + `mv userContent.css "${FF_USER_DIR}/chrome/userContent.css"`
 4. Go to `about:config` → `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
-5. Still in `about:config`, set `sidebar.visibility` to `expand-on-hover`.
-6. Restart Firefox (`about:restartrequired` to reopen your current tabs).
+5. Restart Firefox (`about:restartrequired` to reopen your current tabs).
 
 ## Tweaking and Debugging
 
